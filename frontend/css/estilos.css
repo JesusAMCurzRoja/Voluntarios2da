@@ -1,0 +1,62 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ccc;
+  display: inline-block;
+}
+
+input, button {
+  margin: 8px;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  width: 30%;
+  background: white;
+  box-shadow: 0 0 20px #0004;
+  border-radius: 8px;
+  padding: 20px;
+  display: none;
+}

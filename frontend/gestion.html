@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Voluntarios</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h2>Voluntarios Registrados</h2>
+  <a href="index.html"><button>Menú Principal</button></a>
+  <table border="1" id="tablaVoluntarios">
+    <thead>
+      <tr>
+        <th>ID</th><th>Nombre</th><th>Apellidos</th><th>Edad</th><th>Correo</th><th>Teléfono</th><th>Ocupación</th><th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="editContainer" class="modal" style="display:none;">
+    <form id="formEditar">
+      <h3>Editar Voluntario</h3>
+      <input type="hidden" name="id">
+      <input type="text" name="nombre" required><br>
+      <input type="text" name="apellidos" required><br>
+      <input type="number" name="edad" required><br>
+      <input type="email" name="correo" required><br>
+      <input type="text" name="telefono" required><br>
+      <input type="text" name="ocupacion" required><br>
+      <button type="submit">Guardar</button>
+      <button type="button" onclick="cerrarModal()">Cancelar</button>
+    </form>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
